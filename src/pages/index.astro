@@ -1,16 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { site } from '../data/site.config';
+import Nav from '../components/Nav.astro';
+import Hero from '../components/Hero';
 ---
 
 <Layout>
-  <main class="min-h-screen flex items-center justify-center">
-    <div class="text-center">
-      <h1 class="text-5xl font-bold" style="color: var(--color-gold)">
-        {site.name}
-      </h1>
-      <p class="mt-4 text-xl text-stone-300">{site.role}</p>
-      <p class="mt-2 text-stone-400 max-w-xl mx-auto">{site.tagline}</p>
-    </div>
+  <Nav />
+  <main>
+    <Hero client:load />
+    <!-- Sections added in subsequent phases -->
   </main>
 </Layout>
