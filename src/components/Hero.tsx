@@ -31,52 +31,53 @@ export default function Hero() {
       <Particles count={55} color="#c9a84c" className="opacity-70" />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center gap-6 max-w-4xl">
-        {/* Welcome eyebrow */}
-        <p className="text-xs sm:text-sm uppercase tracking-[0.3em] font-medium" style={{ color: 'var(--color-gold)' }}>
-          <BlurText text={site.welcome} delay={0} duration={0.5} />
-        </p>
-
-        {/* Name */}
-        <h1 className="font-serif text-5xl sm:text-7xl font-bold tracking-tight leading-none">
-          <BlurText
-            text={site.name}
-            className="text-stone-100"
-            delay={0.3}
-            duration={0.7}
-          />
+      <div className="relative z-10 flex flex-col items-center max-w-4xl" style={{ gap: '1.75rem' }}>
+        {/* Welcome — primary eye catcher */}
+        <h1
+          className="font-serif font-bold tracking-tight text-center leading-tight"
+          style={{ fontSize: 'clamp(2.5rem, 7vw, 5.5rem)', color: 'var(--color-gold)' }}
+        >
+          <BlurText text={site.welcome} delay={0} duration={0.7} />
         </h1>
 
+        {/* Divider rule */}
+        <div
+          className="w-24 h-px"
+          style={{ background: 'linear-gradient(to right, transparent, var(--color-gold), transparent)', marginTop: '-0.25rem' }}
+        />
+
+        {/* Name — secondary, subtle */}
+        <p className="font-serif text-2xl sm:text-3xl font-light tracking-widest text-stone-300">
+          <BlurText text={site.name} delay={0.4} duration={0.6} />
+        </p>
+
         {/* Role — gold sweep */}
-        <p className="text-xl sm:text-2xl font-light tracking-widest uppercase">
-          <GradientText text={site.role} delay={0.6} />
+        <p className="text-sm sm:text-base font-light tracking-[0.25em] uppercase text-stone-400">
+          <GradientText text={site.role} delay={0.7} />
         </p>
 
         {/* Tagline */}
-        <p className="text-stone-400 text-base sm:text-lg max-w-2xl leading-relaxed">
-          <BlurText text={site.tagline} delay={1.0} duration={0.5} />
+        <p className="text-stone-500 text-sm sm:text-base max-w-xl leading-relaxed text-center">
+          <BlurText text={site.tagline} delay={1.1} duration={0.5} />
         </p>
 
         {/* CTAs */}
-        <div className="flex flex-wrap gap-4 mt-4 justify-center">
+        <div className="flex flex-wrap gap-4 mt-2 justify-center">
           <a
-            href="#projects"
+            href="#about"
             className="px-8 py-3 rounded-sm text-sm uppercase tracking-widest font-medium transition-all duration-300"
-            style={{
-              background: 'var(--color-gold)',
-              color: '#0d0b08',
-            }}
+            style={{ background: 'var(--color-gold)', color: '#0d0b08' }}
             onMouseEnter={(e) => ((e.target as HTMLElement).style.background = 'var(--color-gold-light)')}
             onMouseLeave={(e) => ((e.target as HTMLElement).style.background = 'var(--color-gold)')}
           >
-            View My Work
+            About Me
           </a>
           <a
             href="#contact"
             className="px-8 py-3 rounded-sm text-sm uppercase tracking-widest font-medium border transition-all duration-300 hover:border-[--color-gold] hover:text-[--color-gold]"
             style={{ borderColor: 'rgba(201,168,76,0.4)', color: '#a8967a' }}
           >
-            Hire Me
+            Work With Me
           </a>
         </div>
       </div>
