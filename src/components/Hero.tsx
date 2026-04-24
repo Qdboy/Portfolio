@@ -32,26 +32,29 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center gap-6 max-w-4xl">
+        {/* Welcome eyebrow */}
+        <p className="text-xs sm:text-sm uppercase tracking-[0.3em] font-medium" style={{ color: 'var(--color-gold)' }}>
+          <BlurText text={site.welcome} delay={0} duration={0.5} />
+        </p>
+
         {/* Name */}
         <h1 className="font-serif text-5xl sm:text-7xl font-bold tracking-tight leading-none">
           <BlurText
             text={site.name}
             className="text-stone-100"
+            delay={0.3}
             duration={0.7}
           />
         </h1>
 
         {/* Role — gold sweep */}
         <p className="text-xl sm:text-2xl font-light tracking-widest uppercase">
-          <GradientText text={site.role} delay={0.5} />
+          <GradientText text={site.role} delay={0.6} />
         </p>
 
         {/* Tagline */}
-        <p
-          className="text-stone-400 text-base sm:text-lg max-w-2xl leading-relaxed"
-          style={{ animationDelay: '0.9s' }}
-        >
-          <BlurText text={site.tagline} delay={0.9} duration={0.5} />
+        <p className="text-stone-400 text-base sm:text-lg max-w-2xl leading-relaxed">
+          <BlurText text={site.tagline} delay={1.0} duration={0.5} />
         </p>
 
         {/* CTAs */}
