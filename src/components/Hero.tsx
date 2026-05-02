@@ -31,11 +31,11 @@ export default function Hero() {
       <Particles count={55} color="#c9a84c" className="opacity-70" />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center max-w-4xl" style={{ gap: '1.75rem' }}>
+      <div className="relative z-10 flex flex-col items-center max-w-4xl" style={{ gap: '1.25rem' }}>
         {/* Welcome — primary eye catcher */}
         <h1
           className="font-serif font-bold tracking-tight text-center leading-tight"
-          style={{ fontSize: 'clamp(2.5rem, 7vw, 5.5rem)', color: 'var(--color-gold)' }}
+          style={{ fontSize: 'clamp(3.5rem, 10vw, 8rem)', color: 'var(--color-gold)', marginBottom: '1.5rem' }}
         >
           <BlurText text={site.welcome} delay={0} duration={0.7} />
         </h1>
@@ -43,7 +43,7 @@ export default function Hero() {
         {/* Divider rule */}
         <div
           className="w-24 h-px"
-          style={{ background: 'linear-gradient(to right, transparent, var(--color-gold), transparent)', marginTop: '-0.25rem' }}
+          style={{ background: 'linear-gradient(to right, transparent, var(--color-gold), transparent)' }}
         />
 
         {/* Name — secondary, subtle */}
