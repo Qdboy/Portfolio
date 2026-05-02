@@ -12,16 +12,19 @@ import { site } from '../data/site.config';
   </a>
 
   <ul class="hidden md:flex gap-8 text-sm tracking-wider text-stone-400 uppercase">
-    {(['About', 'Projects', 'Skills', 'Experience', 'Contact'] as const).map((label) => (
-      <li>
-        <a
-          href={`#${label.toLowerCase()}`}
-          class="hover:text-[--color-gold] transition-colors duration-300"
-        >
-          {label}
-        </a>
-      </li>
-    ))}
+    {(['About', 'Journey', 'Skills', 'Contact'] as const).map((label) => {
+      const href = label === 'Journey' ? '#projects' : `#${label.toLowerCase()}`;
+      return (
+        <li>
+          <a
+            href={href}
+            class="hover:text-[--color-gold] transition-colors duration-300"
+          >
+            {label}
+          </a>
+        </li>
+      );
+    })}
   </ul>
 
   {site.availableForWork && (

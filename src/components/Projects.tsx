@@ -24,11 +24,40 @@ const timelineItems: TimelineItem[] = [
     description: 'Enrolled at Tuskegee University in Tuskegee, Alabama — a historically Black research university. Chose CS/IT driven by a childhood love of video games and a desire to understand how the worlds inside them were built.',
   },
   {
+    year: 'Summer 2023',
+    side: 'right',
+    title: 'Fermi National Accelerator Laboratory',
+    subtitle: 'QCIPU Intern — Quantum Computing',
+    description: 'Interned at Fermi National Lab in Batavia, Illinois under theoretical physicists. Developed quantum circuits to run on real quantum computers using Qiskit, and built Python tools for gathering and visualizing data from quantum simulations.',
+    tags: ['Python', 'Qiskit', 'Quantum Computing'],
+  },
+  {
+    year: '2024',
+    side: 'left',
+    title: 'BoyzIIGentlemen',
+    subtitle: 'Co-Founder & President',
+    description: 'Co-founded BoyzIIGentlemen — a mentorship organization dedicated to helping young men acquire the skills they\'ll need to succeed throughout college and beyond. Served as President (2024–2025) and Vice President (2025–present).',
+  },
+  {
+    year: 'Summer 2024',
+    side: 'left',
+    title: 'ITEST Program Organizer',
+    subtitle: 'Tuskegee University',
+    description: 'Instructed 30+ high school students through building apps with the MIT App Inventor. Led professional development sessions on portfolios, resumes, college prep, and career paths — collaborating with field professionals to expose students to STEM careers.',
+  },
+  {
     year: '2025',
     side: 'left',
     title: 'Battle of the Brains',
     subtitle: 'First competition — team member',
     description: 'First experience competing in the HBCU Battle of the Brains. Competing as a team member, the experience ended in a tough loss — but planted the seed to come back stronger.',
+  },
+  {
+    year: 'Summer 2025',
+    side: 'left',
+    title: 'SIMS Lifecycle Services',
+    subtitle: 'Data Technician',
+    description: 'Harvested DIMMs, BMC, and data from META servers before dismantling and recycling hardware to conserve global resources. Grasped the role quickly and began training others within the first month — maintaining a flawless quality record throughout.',
   },
   {
     year: '2026',
@@ -57,11 +86,18 @@ const timelineItems: TimelineItem[] = [
     url: 'https://internxlpolitiu.lovable.app/',
   },
   {
+    year: '2026',
+    side: 'left',
+    title: 'Hobart Jarrett Debate — 1st Place',
+    subtitle: 'Debate Team Lead',
+    description: 'Led Tuskegee University\'s team to a first-place finish at the Hobart Jarrett Debate Competition — the third national first-place victory of the year, alongside BOTB and InternXL. Three wins in one year, each requiring team coordination, strategic thinking, and execution under pressure.',
+  },
+  {
     year: 'May 2026',
     side: 'left',
     title: 'Graduation',
     subtitle: 'Tuskegee University',
-    description: 'Received Bachelor of Science in Computer Science & Information Technology. Four years of building, competing, leading, and learning — culminating in a degree and a body of work that reflects that journey.',
+    description: 'Received Bachelor of Science in Computer Science & Information Technology on May 9, 2026. Four years of building, competing, leading, and learning — culminating in a degree and a body of work that reflects the full journey.',
   },
 ];
 

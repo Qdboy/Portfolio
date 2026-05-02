@@ -32,7 +32,12 @@ export const skills: Skill[] = [
   { name: 'Railway', icon: 'railway', category: 'Tools & DevOps' },
   { name: 'Chrome Extensions', icon: 'googlechrome', category: 'Tools & DevOps' },
 
+  // Languages (additional)
+  { name: 'C++', icon: 'cplusplus', category: 'Backend' },
+  { name: 'SQL', icon: 'postgresql', category: 'Backend' },
+
   // AI & Automation
   { name: 'Claude AI', icon: 'anthropic', category: 'AI & Automation' },
   { name: 'Lovable', icon: 'lovable', category: 'AI & Automation' },
+  { name: 'Qiskit', icon: 'ibm', category: 'AI & Automation' },
 ];

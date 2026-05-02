@@ -2,14 +2,19 @@
 import Layout from '../layouts/Layout.astro';
 import Nav from '../components/Nav.astro';
 import Hero from '../components/Hero';
+import About from '../components/About';
 import Projects from '../components/Projects';
+import Skills from '../components/Skills';
+import Contact from '../components/Contact';
 ---
 
 <Layout>
   <Nav />
   <main>
     <Hero client:load />
+    <About client:load />
     <Projects client:load />
-    <!-- About, Skills, Experience, Contact — subsequent phases -->
+    <Skills client:load />
+    <Contact client:load />
   </main>
 </Layout>
