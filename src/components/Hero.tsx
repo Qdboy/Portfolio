@@ -32,13 +32,27 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center max-w-4xl" style={{ gap: '1.25rem' }}>
-        {/* Welcome — primary eye catcher */}
-        <h1
-          className="font-serif font-bold tracking-tight text-center leading-tight"
-          style={{ fontSize: 'clamp(3.5rem, 10vw, 8rem)', color: 'var(--color-gold)', marginBottom: '1.5rem' }}
-        >
-          <BlurText text={site.welcome} delay={0} duration={0.7} />
-        </h1>
+        {/* Welcome / to / Built By Bowden — stacked heading */}
+        <div className="flex flex-col items-center text-center" style={{ gap: '0.1rem', marginBottom: '1.5rem' }}>
+          <span
+            className="font-serif font-light tracking-widest"
+            style={{ fontSize: 'clamp(0.8rem, 1.8vw, 1.1rem)', color: '#e7e5e4' }}
+          >
+            <BlurText text="Welcome" delay={0} duration={0.6} />
+          </span>
+          <span
+            className="font-serif font-light tracking-widest"
+            style={{ fontSize: 'clamp(0.8rem, 1.8vw, 1.1rem)', color: '#e7e5e4' }}
+          >
+            <BlurText text="to" delay={0.15} duration={0.6} />
+          </span>
+          <h1
+            className="font-serif font-bold tracking-tight"
+            style={{ fontSize: 'clamp(2rem, 5.5vw, 4.5rem)', color: 'var(--color-gold)' }}
+          >
+            <BlurText text="Built By Bowden" delay={0.35} duration={0.7} />
+          </h1>
+        </div>
 
         {/* Divider rule */}
         <div
