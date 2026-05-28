@@ -87,6 +87,15 @@ const timelineItems: TimelineItem[] = [
   },
   {
     year: '2026',
+    side: 'right',
+    title: 'ScholarSwipe',
+    subtitle: 'Senior Design — CSCI 453',
+    description: projects.find(p => p.title === 'ScholarSwipe')?.description ?? '',
+    tags: ['Swift', 'Xcode', 'iOS', 'MongoDB', 'REST API'],
+    github: 'https://github.com/tu-csci453-sp26/csci453-sp26-project-team-1',
+  },
+  {
+    year: '2026',
     side: 'left',
     title: 'Hobart Jarrett Debate — 1st Place',
     subtitle: 'Debate Team Lead',

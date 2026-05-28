@@ -33,6 +33,17 @@ export const projects: Project[] = [
     year: '2026',
   },
   {
+    title: 'ScholarSwipe',
+    subtitle: 'CSCI 453 Senior Design — Tuskegee University',
+    description:
+      'iOS mobile app that reframes addictive short-form scrolling into structured learning. Built with a 4-person team for CSCI 453 senior capstone. Features a TikTok-style swipeable video feed, per-video knowledge checks, gamified XP and avatar progression, and a parental dashboard with engagement insights. Supports four user roles: Young Learners, Parents & Educators, Content Creators, and Admins.',
+    stack: ['Swift', 'Xcode', 'iOS', 'MongoDB', 'REST API'],
+    github: 'https://github.com/tu-csci453-sp26/csci453-sp26-project-team-1',
+    highlight: 'Senior Design — Tuskegee University',
+    category: 'personal',
+    year: '2026',
+  },
+  {
     title: 'ObsidianETFS',
     subtitle: 'Automated Dividend Swing Trading Bot',
     description:
